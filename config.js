@@ -55,7 +55,7 @@ module.exports = {
     'bgolub/blog',
     'ruhoh/blog',
     'ccjr/blog',
-    'jakubholynet/blog',
+    // 'jakubholynet/blog',
     'huangz1990/blog',
     'pixelhandler/blog',
     'ma6174/blog',
