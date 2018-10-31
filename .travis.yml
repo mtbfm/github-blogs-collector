@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- 6.9.0
+install:
+- npm install
+script:
+- node harvest-bootstrap.js qiwihui $GITHUB_TOKEN weekly
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - node_modules
+notifications:
+  email:
+    recipients:
+    - qwh005007@gmail.com
+    on_success: change
+    on_failure: always
+env:
+  global:
+    secure: MyJ2tTdZMDNQ9w3uh88CcQB+YG3sB06lBLXelwPkDkPm9ZHFhebvyeJx/2by2sVmYZPa7WJRVzgKHHexmX7somITw/gjewj6L/rkup3vG9dOexhglXyz6Q+6QyhhV/4G3IRv9/E0KzVIQetJQkyMxfB177p5f1Y93R+YevULYFyFhxFtPEoBmQHX20uIKPm2aq4Op7wmtD88k0MfUs9rrzYHJAsXTuVPjFuPLwwFfhthD4Bzb0p2xParvtkA9zCQcY02/58wv7Nawd5cOyFKXvXgE/nvz7LY1DXnrbc0o+HhKaq/K3FXpdVhyr0HxUH32cwEGldQkr2zDaLc2/1zvjOHCWFRp0HXRP3MFQWvBu+0MYqT8+9lKgDvfk2QPI3JGHpV/vE5Vb4+pzomvilYabj6Y6RrBF0ZWeTgM51NpsD+hLxDoJh1SrWMxn4vrlQ7EDWw8vyfUn66muZI0gohSQox8dRV8aj3Ew24Liy6iyJXSXAXoeJUr6O/YBeO0hKaJCC4NpEE+OWXDoIQGsbFxeqo2Og7yBwQvBQbSb1Xs35GNfDwety2svNZg09NUB8HnUsew819eXsaYw/+SFA7ocMG78YOC46lgjJuxNEES33nNM/gNy+UQX+ulyAPtje3dz4SUqrwvoh3yjp4zl8CKHwfKK8wVnqe6XIlZAhimYY=
