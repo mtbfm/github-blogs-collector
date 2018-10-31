@@ -4,7 +4,7 @@ node_js:
 install:
 - npm install
 script:
-- node harvest-bootstrap.js qiwihui $GITHUB_TOKEN weekly
+- node src/harvest-bootstrap.js qiwihui $GH_TOKEN weekly
 branches:
   only:
   - master
