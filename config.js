@@ -128,6 +128,7 @@ module.exports = {
     'Enome/blog',
     'youngwind/blog',
     'weexteam/article',
-    'sorrycc/zaobao'
+    'sorrycc/zaobao',
+    'pkwenda/Blog'
   ]
 }
